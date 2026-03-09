@@ -1,0 +1,15 @@
+C:\Projects\cse210-hw\csharp-prep\bin\Debug\net10.0\csharp-prep.exe
+C:\Projects\cse210-hw\csharp-prep\bin\Debug\net10.0\csharp-prep.deps.json
+C:\Projects\cse210-hw\csharp-prep\bin\Debug\net10.0\csharp-prep.runtimeconfig.json
+C:\Projects\cse210-hw\csharp-prep\bin\Debug\net10.0\csharp-prep.dll
+C:\Projects\cse210-hw\csharp-prep\bin\Debug\net10.0\csharp-prep.pdb
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.AssemblyInfoInputs.cache
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.AssemblyInfo.cs
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.csproj.CoreCompileInputs.cache
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.sourcelink.json
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.dll
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\refint\csharp-prep.dll
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.pdb
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\csharp-prep.genruntimeconfig.cache
+C:\Projects\cse210-hw\csharp-prep\obj\Debug\net10.0\ref\csharp-prep.dll
