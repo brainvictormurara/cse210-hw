@@ -13,21 +13,14 @@ public class Journal
 
     public void DisplayAll()
     {
-        if (_entries.Count == 0)
+        foreach (Entry e in _entries)
         {
-            Console.WriteLine("The journal is currently empty.");
-            return;
-        }
-
-        foreach (Entry entry in _entries)
-        {
-            entry.Display();
+            e.Display();
         }
     }
 
     public void SaveToFile(string file)
     {
-        // Using ~|~ as a separator to ensure commas in user text don't break the load logic
         using (StreamWriter outputFile = new StreamWriter(file))
         {
             foreach (Entry e in _entries)
@@ -35,7 +28,6 @@ public class Journal
                 outputFile.WriteLine($"{e._date}~|~{e._promptText}~|~{e._entryText}~|~{e._mood}");
             }
         }
-        Console.WriteLine("Journal saved successfully.");
     }
 
     public void LoadFromFile(string file)
@@ -46,23 +38,21 @@ public class Journal
             return;
         }
 
-        _entries.Clear(); // Requirements: Replace current entries
-        string[] lines = System.IO.File.ReadAllLines(file);
+        _entries.Clear(); 
+        string[] lines = File.ReadAllLines(file);
 
         foreach (string line in lines)
         {
-            string[] parts = line.Split("~|~");
-
+            string[] parts = line.Split(new string[] { "~|~" }, StringSplitOptions.None);
             if (parts.Length == 4)
             {
-                Entry newEntry = new Entry();
-                newEntry._date = parts[0];
-                newEntry._promptText = parts[1];
-                newEntry._entryText = parts[2];
-                newEntry._mood = parts[3];
-                _entries.Add(newEntry);
+                Entry entry = new Entry();
+                entry._date = parts[0];
+                entry._promptText = parts[1];
+                entry._entryText = parts[2];
+                entry._mood = int.Parse(parts[3]);
+                _entries.Add(entry);
             }
         }
-        Console.WriteLine("Journal loaded successfully.");
     }
 }
