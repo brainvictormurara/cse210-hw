@@ -11,19 +11,11 @@ public class Word
         _isHidden = false;
     }
 
-    public void Hide()
-    {
-        _isHidden = true;
-    }
-
-    public bool IsHidden()
-    {
-        return _isHidden;
-    }
+    public void Hide() { _isHidden = true; }
+    public bool IsHidden() { return _isHidden; }
 
     public string GetDisplayText()
     {
-        // If hidden, return underscores equal to the length of the word
         return _isHidden ? new string('_', _text.Length) : _text;
     }
 }

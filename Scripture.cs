@@ -16,9 +16,8 @@ public class Scripture
     public void HideRandomWords(int numberToHide)
     {
         Random random = new Random();
-        
-        // STRETCH CHALLENGE: Only hide words that are not already hidden
-        List<Word> visibleWords = _words.Where(w => !w.IsHidden()).ToList();
+        // STRETCH CHALLENGE: Logic to pick only words that aren't already hidden
+        var visibleWords = _words.Where(w => !w.IsHidden()).ToList();
 
         for (int i = 0; i < numberToHide && visibleWords.Count > 0; i++)
         {
@@ -30,12 +29,9 @@ public class Scripture
 
     public string GetDisplayText()
     {
-        string text = string.Join(" ", _words.Select(w => w.GetDisplayText()));
-        return $"{_reference.GetDisplayText()} {text}";
+        string displayWords = string.Join(" ", _words.Select(w => w.GetDisplayText()));
+        return $"{_reference.GetDisplayText()} {displayWords}";
     }
 
-    public bool IsCompletelyHidden()
-    {
-        return _words.All(w => w.IsHidden());
-    }
+    public bool IsCompletelyHidden() => _words.All(w => w.IsHidden());
 }
