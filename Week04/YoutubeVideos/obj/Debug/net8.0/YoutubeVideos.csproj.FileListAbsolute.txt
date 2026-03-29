@@ -1,0 +1,15 @@
+D:\cse210\Week04\YoutubeVideos\bin\Debug\net8.0\YoutubeVideos.exe
+D:\cse210\Week04\YoutubeVideos\bin\Debug\net8.0\YoutubeVideos.deps.json
+D:\cse210\Week04\YoutubeVideos\bin\Debug\net8.0\YoutubeVideos.runtimeconfig.json
+D:\cse210\Week04\YoutubeVideos\bin\Debug\net8.0\YoutubeVideos.dll
+D:\cse210\Week04\YoutubeVideos\bin\Debug\net8.0\YoutubeVideos.pdb
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.GeneratedMSBuildEditorConfig.editorconfig
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.AssemblyInfoInputs.cache
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.AssemblyInfo.cs
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.csproj.CoreCompileInputs.cache
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.sourcelink.json
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.dll
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\refint\YoutubeVideos.dll
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.pdb
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\YoutubeVideos.genruntimeconfig.cache
+D:\cse210\Week04\YoutubeVideos\obj\Debug\net8.0\ref\YoutubeVideos.dll
