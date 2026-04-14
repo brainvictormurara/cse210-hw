@@ -1,40 +1,52 @@
-public class ReflectingActivity : Activity
+using System;
+using System.Collections.Generic;
+
+public class ReflectionActivity : Activity
 {
-    private List<string> _prompts = new List<string> {
+    private List<string> _prompts = new List<string>
+    {
         "Think of a time when you stood up for someone else.",
-        "Think of a time when you did something really difficult.",
-        "Think of a time when you helped someone in need.",
-        "Think of a time when you did something truly selfless."
+        "Think of a time when you did something difficult.",
+        "Think of a time when you helped someone.",
+        "Think of a time when you did something selfless."
     };
 
-    private List<string> _questions = new List<string> {
-        "Why was this experience meaningful to you?",
-        "How did you feel when it was complete?",
-        "What did you learn about yourself through this experience?",
-        "How can you keep this experience in mind in the future?"
+    private List<string> _questions = new List<string>
+    {
+        "Why was this meaningful?",
+        "Have you done this before?",
+        "How did you start?",
+        "How did you feel after?",
+        "What made it different?",
+        "What did you learn?",
+        "How can you apply this?"
     };
 
-    public ReflectingActivity() : base("Reflecting Activity", 
-        "This activity will help you reflect on times in your life when you have shown strength and resilience.") {}
+    public ReflectionActivity() : base(
+        "Reflection Activity",
+        "Reflect on times you showed strength and resilience.")
+    {
+    }
 
     public void Run()
     {
-        DisplayStartingMessage();
-        Random random = new Random();
-        
-        Console.WriteLine("\nConsider the following prompt:");
-        Console.WriteLine($" --- {_prompts[random.Next(_prompts.Count)]} --- ");
-        Console.WriteLine("\nWhen you have something in mind, press enter to continue.");
-        Console.ReadLine();
+        StartMessage();
 
-        DateTime endTime = DateTime.Now.AddSeconds(_duration);
+        Random rand = new Random();
+
+        Console.WriteLine("\n" + _prompts[rand.Next(_prompts.Count)]);
+        Console.WriteLine("\nReflect on the following questions:");
+        ShowSpinner(3);
+
+        DateTime endTime = DateTime.Now.AddSeconds(GetDuration());
+
         while (DateTime.Now < endTime)
         {
-            Console.Write($"> {_questions[random.Next(_questions.Count)]} ");
-            ShowSpinner(5);
-            Console.WriteLine();
+            string question = _questions[rand.Next(_questions.Count)];
+            Console.WriteLine($"> {question}");
+            ShowSpinner(4);
         }
 
-        DisplayEndingMessage();
+        EndMessage();
     }
 }
